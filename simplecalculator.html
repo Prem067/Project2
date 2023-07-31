@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <style>
+        button{
+            cursor: pointer;
+            border-radius: 8px;
+            border-color: brown;
+        }
+        input{
+            box-shadow: 5px 3px #5a5858;
+        }
+        body{
+            background-color: gray;
+        }
+    </style>
+    <h1>Simple calculator</h1><br>
+    <label for="a">Enter the first number:</label>
+    <input type="number" id="a"><br>
+    <p></p>
+    <label for="b">Enter the second number:</label>
+    <input type="number" id="b"><br><hr>
+    <script src="operation.js"></script>
+    <h2><u>Select the operation</u></h2>
+    <button onclick="add()">+</button>&nbsp
+    <button onclick="sub()">-</button>&nbsp
+    <button onclick="mul()">*</button>&nbsp
+    <button onclick="div()">/</button>&nbsp
+    <button onclick="rem()">%</button>&nbsp<hr>
+    <p id="button1"></p>
+</body>
+</html>
